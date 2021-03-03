@@ -1,0 +1,432 @@
+FILE,LAD 2
+SOR,0 XIC,? EOR,0
+RCM,El programa realiza taladrado o tester usando solo el sensor Di0 o Di1 y Di2
+SOR,1 XIC,I:1/1 RES,B3:4 EOR,1
+RCM,opcion 1- siguiendo los datos del BSL del sensor Di0 el cual se encuentra en I:1/10, 2- haciendo seguimiento de los sensores en I:1/11 Di1 y I:1/12 para Di2
+SOR,2 XIO,I:1/1 BST,1 XIC,I:1/0 NXB,1 XIC,B3:0/0 BND,1 OTE,B3:0/0 EOR,2
+RCM,1.- Accionamiento por botonera
+SOR,3 XIC,B3:0/0 XIO,T4:4/DN XIO,B3:2/1 XIO,B3:2/3 TON,T4:3,20 EOR,3
+RCM,
+SOR,4 XIC,B3:0/0 XIO,T4:3/DN XIO,B3:2/1 XIO,B3:2/3 OTE,B3:2/6 EOR,4
+RCM,
+SOR,5 XIC,B3:0/0 XIO,B3:2/6 TON,T4:4,150 EOR,5
+RCM,
+SOR,6 XIC,B3:0/0 XIC,T4:3/DN OSR,B3:5/0 BSL,#B3:4,R6:1,I:1/10,6 EOR,6
+RCM,
+SOR,7 XIC,B3:0/0 XIO,B3:2/6 TON,T4:0,30 EOR,7
+RCM,2.- Control de escalera 1er paso
+SOR,8 XIC,B3:0/0 XIO,B3:2/6 OTE,B3:2/0 EOR,8
+RCM,
+SOR,9 XIC,T4:0/DN OTE,B3:0/1 EOR,9
+RCM,
+SOR,10 XIC,B3:0/0 XIO,I:1/4 TON,T4:5,20 EOR,10
+RCM,
+SOR,11 XIC,B3:0/0 XIO,T4:5/DN OTE,B3:2/1 EOR,11
+RCM,
+SOR,12 XIC,B3:0/0 XIO,I:1/6 TON,T4:6,20 EOR,12
+RCM,
+SOR,13 XIC,B3:0/0 XIO,T4:6/DN OTE,B3:2/3 EOR,13
+RCM,
+SOR,14 XIC,B3:0/0 XIO,B3:2/6 TON,T4:7,20 EOR,14
+RCM,
+SOR,15 XIC,B3:0/0 XIO,B3:2/6 XIO,T4:7/DN OTE,B3:2/7 EOR,15
+RCM,
+SOR,16 XIC,B3:0/0 XIO,B3:2/6 BST,1 XIC,B3:4/1 NXB,1 XIC,I:1/11 BND,1 TON,T4:1,90 EOR,16
+RCM,2do paso taladro
+SOR,17 XIC,B3:0/0 XIO,B3:2/6 LIM,20,T4:1.ACC,40 OTE,B3:2/2 EOR,17
+RCM,
+SOR,18 XIC,B3:0/0 XIO,B3:2/6 LIM,70,T4:1.ACC,89 OTE,B3:3/1 EOR,18
+RCM,
+SOR,19 XIC,B3:0/0 XIO,B3:2/6 BST,1 XIC,B3:4/2 NXB,1 XIC,I:1/12 BND,1 TON,T4:2,130 EOR,19
+RCM,3er paso test
+SOR,20 XIC,B3:0/0 XIO,B3:2/6 LIM,20,T4:2.ACC,40 OTE,B3:2/4 EOR,20
+RCM,
+SOR,21 XIC,B3:0/0 XIO,B3:2/6 LIM,90,T4:2.ACC,109 OTE,B3:3/4 EOR,21
+RCM,
+SOR,22 XIC,B3:0/0 XIO,B3:2/6 LIM,110,T4:2.ACC,119 OTE,B3:2/8 EOR,22
+RCM,
+SOR,23 XIC,B3:2/0 XIO,B3:2/6 BST,1 XIC,I:1/11 NXB,1 XIC,B3:4/1 BND,1 OTE,O:2/0 EOR,23
+RCM,3.- Control de cilindros o motores
+SOR,24 BST,1 XIC,B3:2/1 NXB,1 XIC,B3:3/1 BND,1 OTE,O:2/2 EOR,24
+RCM,
+SOR,25 XIC,B3:2/2 OTE,O:2/3 EOR,25
+RCM,
+SOR,26 BST,1 XIC,B3:2/3 NXB,1 XIC,B3:3/4 BND,1 OTE,O:2/4 EOR,26
+RCM,
+SOR,27 XIC,B3:2/4 OTE,O:2/5 EOR,27
+RCM,
+SOR,28 XIC,B3:2/6 OTE,O:2/1 EOR,28
+RCM,
+SOR,29 XIC,B3:2/7 OTE,O:2/7 EOR,29
+RCM,
+SOR,30 XIC,B3:2/8 OTE,O:2/8 EOR,30
+RCM,
+SOR,31 END,31
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+B3:0/0 Binario marcha
+I:1/0 Arranque
+I:1/1 Paro de emergencia
+O:2/0 MT:Motor taladro
+B3:0/1 3 sec de MT
+O:2/2 TA: Taladro arriba
+O:2/3 TB: Taladro abajo
+B3:0/2 TA0 activado
+B3:1/0 OSR de conteo
+B3:1/1 OSR de posicion TA TTAR
+I:1/4 TA0
+I:1/5 TTAR0
+I:1/6 TTAR0
+B3:2/0 Binario Arranque MT
+B3:2/1 Binario activacion de TA
+B3:2/3 Binario activacion de TTAR
+I:1/8 C1R 0
+B3:2/5 Binario activacion de C1R0
+O:2/4 TTAR: Test arriba
+O:2/6 C!R inicio de carrera
+B3:2/2 Binario activacion de TB
+B3:3/1 Binario activacion de TA
+O:2/5 TTAB:Test abajo
+I:1/11 Sensor Di1
+I:1/10 Sensor Di0
+I:1/12 Sensor Di2
+B3:2/4 Binario activacion TTAB
+B3:3/4 Binario Activacion TTAR
+B3:2/6 Binario Motor rotacion
+O:2/1 Motor rotacion
+B3:2/7 Binario Actuador C1R
+O:2/7 Actuador C1R
+B3:2/8 Binario actuador C2R
+O:2/8 Binario actuador C2R
+T4:3/DN conveyor gira 120 grados
+T4:0/DN Se cumplen los 3 seg de MT
+T4:5/DN Llega TA a inicio de carrera
+T4:6/DN Llega TTAR a inicio de carre
+T4:7/DN Final de carrera de C1R
+B3:4/1 Detecta posicion p taladrar
+B3:4/2 Detecta posicion p test
+T4:4/DN Termino de 1 ciclo de trabaj

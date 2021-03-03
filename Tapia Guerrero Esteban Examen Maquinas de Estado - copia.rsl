@@ -1,0 +1,425 @@
+FILE,LAD 2
+SOR,0 XIC,S:1/15 MCR,Active EOR,0
+RCM,1,- Seccion First scan
+SOR,1 OTL,B3:0/1 EOR,1
+RCM,
+SOR,2 OTU,B3:0/2 EOR,2
+RCM,
+SOR,3 OTU,B3:0/3 EOR,3
+RCM,
+SOR,4 OTU,B3:0/4 EOR,4
+RCM,
+SOR,5 OTU,B3:0/5 EOR,5
+RCM,
+SOR,6 MCR,Active EOR,6
+RCM,
+SOR,7 XIC,B3:0/2 OTE,O:2/0 EOR,7
+RCM,2.- Seccion Salidas
+SOR,8 XIC,B3:0/3 XIC,B3:1/0 OTE,O:2/3 EOR,8
+RCM,
+SOR,9 XIC,B3:0/3 XIC,B3:1/1 OTE,O:2/4 EOR,9
+RCM,
+SOR,10 XIC,B3:0/4 OTE,O:2/1 EOR,10
+RCM,
+SOR,11 XIC,B3:0/5 XIO,B3:1/2 OTE,O:2/5 EOR,11
+RCM,
+SOR,12 XIC,B3:0/5 XIC,B3:1/3 OTE,O:2/2 EOR,12
+RCM,
+SOR,13 XIC,B3:0/1 MCR,Active EOR,13
+RCM,3.- Seccion Control de estados
+SOR,14 XIC,I:1/4 OTU,B3:0/1 EOR,14
+RCM,
+SOR,15 XIC,I:1/4 OTL,B3:0/2 EOR,15
+RCM,
+SOR,16 MCR,Active EOR,16
+RCM,
+SOR,17 XIC,B3:0/2 MCR,Active EOR,17
+RCM,
+SOR,18 XIC,I:1/2 OTU,B3:0/2 EOR,18
+RCM,
+SOR,19 XIC,I:1/2 OTL,B3:0/3 EOR,19
+RCM,
+SOR,20 MCR,Active EOR,20
+RCM,
+SOR,21 XIC,B3:0/3 MCR,Active EOR,21
+RCM,
+SOR,22 XIO,I:1/0 OTE,B3:1/0 EOR,22
+RCM,
+SOR,23 XIC,I:1/0 OTE,B3:1/1 EOR,23
+RCM,
+SOR,24 XIC,I:1/1 OTU,B3:0/3 EOR,24
+RCM,
+SOR,25 XIC,I:1/1 OTL,B3:0/4 EOR,25
+RCM,
+SOR,26 MCR,Active EOR,26
+RCM,
+SOR,27 XIC,B3:0/4 MCR,Active EOR,27
+RCM,
+SOR,28 TON,T4:0,100 EOR,28
+RCM,
+SOR,29 XIC,T4:0/DN OTU,B3:0/4 EOR,29
+RCM,
+SOR,30 XIC,T4:0/DN OTL,B3:0/5 EOR,30
+RCM,
+SOR,31 MCR,Active EOR,31
+RCM,
+SOR,32 XIC,B3:0/5 MCR,Active EOR,32
+RCM,
+SOR,33 TON,T4:1,300 EOR,33
+RCM,
+SOR,34 XIC,T4:1/DN OTE,B3:1/2 EOR,34
+RCM,
+SOR,35 XIC,T4:1/DN OTE,B3:1/3 EOR,35
+RCM,
+SOR,36 XIO,I:1/3 OTU,B3:0/5 EOR,36
+RCM,
+SOR,37 XIO,I:1/3 OTL,B3:0/1 EOR,37
+RCM,
+SOR,38 END,38
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+S:1/15 Bit First scan
+B3:0/1 Bit 1er Estado
+B3:0/2 Bit 2do Estado
+B3:0/3 Bit 3er Estado
+B3:0/4 Bit 4to Estado
+B3:0/5 Bit 5to Estado
+O:2/0 Valvula V1
+I:1/0 Sensor SP1
+O:2/3 Valvula VA
+O:2/4 Valvula VB
+I:1/1 Sensor SP2
+O:2/1 Valvula V2
+O:2/5 Motor Mezcladora
+I:1/4 Boton A
+I:1/2 Sensor DL
+B3:1/0 Activacion VA
+B3:1/1 Activacion VB
+B3:1/2 Desactivacion M
+B3:1/3 Activacion V3
+O:2/2 Valvula V3
+I:1/3 Sensor DV

@@ -1,0 +1,378 @@
+FILE,LAD 2
+SOR,0 XIO,I:1/0 XIC,I:1/1 XIO,B3:0/1 XIO,B3:0/2 XIO,B3:0/3 XIO,B3:0/4 XIO,B3:0/5 XIO,B3:0/6 OTE,B3:0/0 EOR,0
+RCM,1.- Control de botonera
+SOR,1 BST,1 XIC,I:1/0 NXB,1 XIC,B3:0/7 BND,1 XIO,I:1/2 OTE,B3:0/7 EOR,1
+RCM,
+SOR,2 XIO,I:1/0 BST,1 XIC,B3:0/0 XIC,I:1/6 XIC,I:1/2 NXB,1 XIC,B3:0/1 BND,1 XIO,B3:0/2 OTE,B3:0/1 EOR,2
+RCM,2.- Logica de control
+SOR,3 XIO,I:1/0 BST,1 XIC,B3:0/1 XIC,I:1/3 NXB,1 XIC,B3:0/2 BND,1 XIO,B3:0/3 OTE,B3:0/2 EOR,3
+RCM,
+SOR,4 XIO,I:1/0 BST,1 XIC,B3:0/2 XIC,I:1/5 NXB,1 XIC,B3:0/3 BND,1 XIO,B3:0/4 OTE,B3:0/3 EOR,4
+RCM,
+SOR,5 XIO,I:1/0 BST,1 XIC,B3:0/3 XIC,I:1/4 NXB,1 XIC,B3:0/4 BND,1 XIO,B3:0/5 OTE,B3:0/4 EOR,5
+RCM,
+SOR,6 XIO,I:1/0 BST,1 XIC,B3:0/4 XIC,I:1/2 NXB,1 XIC,B3:0/5 BND,1 XIO,B3:0/6 OTE,B3:0/5 EOR,6
+RCM,
+SOR,7 XIO,I:1/0 BST,1 XIC,B3:0/5 XIC,I:1/7 NXB,1 XIC,B3:0/6 XIC,I:1/6 BND,1 XIO,B3:0/1 OTE,B3:0/6 EOR,7
+RCM,
+SOR,8 XIC,B3:0/1 OTE,O:2/0 EOR,8
+RCM,3.- Activacion de bobinas
+SOR,9 XIC,B3:0/2 OTE,O:2/2 EOR,9
+RCM,
+SOR,10 BST,1 XIC,B3:0/4 NXB,1 XIC,B3:0/7 BND,1 OTE,O:2/1 EOR,10
+RCM,
+SOR,11 XIC,B3:0/5 OTE,O:2/3 EOR,11
+RCM,
+SOR,12 END,12
+RCM,
+FILE,SBR 3:
+SOR,0 END,0
+RCM,
+FILE,SBR 4:
+SOR,0 END,0
+RCM,
+FILE,SBR 5:
+SOR,0 END,0
+RCM,
+FILE,SBR 6:
+SOR,0 END,0
+RCM,
+FILE,SBR 7:
+SOR,0 END,0
+RCM,
+FILE,SBR 8:
+SOR,0 END,0
+RCM,
+FILE,SBR 9:
+SOR,0 END,0
+RCM,
+BTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+NTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+FTBL
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+SYMBOLS
+I:1/0 Paro de emergencia
+I:1/1 Inicio
+B3:0/0 Arranque
+B3:0/1 K1
+B3:0/2 K2
+B3:0/3 K3
+B3:0/4 K4
+B3:0/5 K5
+B3:0/6 K6
+B3:1/0 A0
+B3:1/1 A1
+B3:1/2 B0
+B3:1/3 B1
+B3:1/4 C0
+B3:1/5 C1
+O:2/0 A+
+O:2/2 B+
+O:2/1 A-
+O:2/3 C+
+I:1/2 A0
+I:1/3 A1
+I:1/4 B0
+I:1/5 B1
+I:1/6 C0
+I:1/7 C1
+B3:0/7 A-
